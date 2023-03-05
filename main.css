@@ -566,7 +566,7 @@ table td span{
         transition: 1s;
     }
     .sidenav .header{
-        margin-top: -10px;
+        margin-top: 14px;
     }
     .sidenav .header img{
         width: 50%;
@@ -620,7 +620,7 @@ table td span{
         transition: 1s;
     }
     .sidenav .header{
-        margin-top: 10px;
+        margin-top: 13px;
     }
     .sidenav .header img{
         width: 100%;
