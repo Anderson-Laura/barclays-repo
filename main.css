@@ -4,6 +4,20 @@
     box-sizing: border-box;
     font-family: "poppins", sans-serif;
 }
+.nav-header{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 11, 11, 0.911);
+    border-bottom: 3px solid yellow;
+}
+.nav-header h1{
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.main{
+    background: #fff;
+}
 .container{
     width: 100%;
     height: 100vh;
@@ -11,36 +25,39 @@
     grid-template-columns: 20% 55% auto;
     gap: 1px;
     position: relative;
-    overflow: hidden;
-    background-color: rgba(204, 202, 202, 0.842);
+    overflow: hidde;
+    /* background: rgb(190, 25, 25); */
+    /* background-color: rgba(204, 202, 202, 0.842); */
 }
 /* ----------side-nav1-------- */
 .sidenav{
-    background-color: rgb(254, 255, 255);
+    /* background-color: rgb(254, 255, 255); */
+    background: rgb(190, 25, 25);
     /* border-radius: 5px; */
     box-shadow: 2px 1px 10px rgba(54, 53, 53, 0.288);
 }
 .sidenav .header{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 90px;
-    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    padding-left: 20px;
+    background-color: white;
 }
 .header img{
-    width: 100%;
+    width: 90%;
 }
 .lists{
     margin: 8px 0;
     display: flex;
     flex-direction: column;
+    padding: 100px 2px;
+   
 }
 .lists a{
     text-decoration: none;
     padding: 15px 30px;
-    color: black;
+    color: #fff;
     transition: all 300ms ease;
-    font-size: 18px;
+    font-size: 25px;
 }
 .lists a:hover{
     background-color: rgba(116, 139, 136, 0.63);
@@ -48,23 +65,21 @@
 .lists .active{
     padding: 15px 30px;
     background-color: rgba(116, 139, 136, 0.63);
-    color: black;
+    color: #fff;
     margin: 2px;
-    font-size: 20px;
-    border-right: 6px solid  rgb(0, 153, 255);
+    font-size: 25px;
+    border-right: 6px solid rgb(255, 255, 255);
 }
 /* ----------Main contect-------- */
 .content{
-    background-color: rgb(255, 255, 255);
-}
-.pound{
-    font-size: 30px;
-}
-.zero{
-    font-size: 30px;
+    /* background-color: rgb(255, 255, 255); */
+    background: rgb(190, 25, 25);
 }
 .first-content{
     margin: 25px 20px ;
+}
+.first-content h1{
+    color: #fff;
 }
 .second-content{
     /* border: 1px solid blue; */
@@ -149,19 +164,12 @@
     font-size: 30px;
     display: none;
 }
-/* .button button span{
-    font-size: 20px;
-    font-weight: 600;
-    padding-top: 20px;
-    margin-left: 0px;
-    margin-top: 20px;
-
-} */
 .third-content{
     margin: 10px 8px;
 }
 .third-content h1{
     padding: 27px 8px;
+    color: #fff;
 }
 .table table{
     width: 100%;
@@ -172,7 +180,7 @@
     padding: 21px 20px;
     border-bottom: 3px solid rgb(218, 218, 209);
     text-align: left;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
 }
 .table table th{
@@ -190,6 +198,9 @@ table td span{
 }
 .green{
     color: green;
+}
+.yellow{
+    color: rgb(229, 255, 0);
 }
 .table-cont table td,th{
     background-color: rgb(179, 182, 180);
@@ -221,7 +232,8 @@ table td span{
 }
 /* ----------side-nav2-------- */
 .sidenav-2{
-    background-color: rgb(225, 238, 238);
+    /* background-color: rgb(225, 238, 238); */
+    background: rgb(190, 25, 25);
 }
 .images-settings{
     text-align: right;
@@ -244,10 +256,10 @@ table td span{
 .progress-bar{
     position: relative;
     display: inline-block;
-    width: 10rem;
-    height: 10rem;
+    width: 13rem;
+    height: 13rem;
     border-radius: 9rem;
-    margin: 1.3rem 4.3rem ;
+    margin: 1.5rem 4.3rem ;
     border: 1.3rem solid black;
     box-shadow: inset 0 0 9px grey,  0px 0px 9px grey, 0px 0px 9px grey;
     border-left-color: rgb(9, 255, 0);
@@ -261,6 +273,9 @@ table td span{
     font-size: 14px;
     margin-top: 30px;
 }
+.text-progress h1{
+    color: #fff;
+}
 .progress-bar .value{
     /* position: absolute;
     bottom: 0;
@@ -268,11 +283,12 @@ table td span{
     top: 35px; */
     padding: 38px 20px;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 30px;
 }
 .progress-notes h1{
     margin: 15px 20px;
     font-size: 25px;
+    color: #fff;
 }
 .list-head .list{
     margin: 7px 7px;
@@ -305,10 +321,10 @@ table td span{
     }
     /* ----------side-nav1-------- */
     .sidenav .header{
-        margin: 10px 0 90px 10px;
+        margin: 0px 0 50px 0;
     }
     .header img{
-        width: 100%;
+        width: 90%;
     }
     .lists a{
         font-size: 18px;
@@ -340,7 +356,7 @@ table td span{
         margin: 0px 2px;
     }
     .third-content .hide{
-        visibility: visible;
+        visibility: hidden;
     }
     .third-content h1{
         padding: 34px 10px;
@@ -376,22 +392,15 @@ table td span{
     .container{
         /* background-color: red; */
         display: grid;
-        grid-template-columns: 19% auto 27%;
+        grid-template-columns: 20% auto 27%;
     }
     /* ------sidenav1--------- */
-    /* .sidenav .header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } */
     .sidenav .header{
-        margin-bottom: 80px;
-        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 0;
     }
     .header img{
         width: 100%;
-        margin-right: 20px;
     }
     .notes h3{
         font-size: 15px;
@@ -424,31 +433,23 @@ table td span{
     } */
 /* ------sidenav1--------- */
     .sidenav .header{
-        margin-bottom: 80px;
-        margin-left: 5px;
-        margin-top: 30px;
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 60px;
     }
     .header img{
-        width: 90%;
-    }
-     .table table{
         width: 100%;
-        border-collapse: collapse;
-        visibility: visible;
-        display: table;
+
     }
     .table table td,th{
         font-size: 12px;
         font-weight: 600;
     }
-    .lists a{
-        font-size: 17px;
-    }
     .notes h3{
         font-size: 15px;
     }
-    .second-content .notes h1{
-        font-size: 30px;
+    .notes h1{
+        font-size: 90px;
     }
     .table table th{
         font-size: 14px;
@@ -467,15 +468,12 @@ table td span{
         overflow: auto;
     }
     /* ------sidenav1--------- */
-    .sidenav .header{
-        margin-bottom: 80px; 
-        margin-top: 30px;
+    .sidenav{
+        border-radius: 0;
     }
-    .header img{
-        width: 100%;
-    }
+    
     .lists{
-        margin: 1px 2px;
+        padding: 100px 2px;
     }
     .lists a, .lists .active{
         padding: 13px;
@@ -498,26 +496,18 @@ table td span{
     .sidenav-2{
         display: none;
     }
-     .table table{
-        width: 100%;
-        border-collapse: collapse;
-        visibility: visible;
-        display: table;
-    }
+    
 
 }
 @media screen and (max-width:750px){
     .lists{
-        margin: 1px 2px;
+        padding: 100px 2px;
     }
     .lists a, .lists .active{
         padding: 9px;
     }
     .notes h1{
         font-size: 30px;
-    }
-    .notes h1 img{
-        width: 13%;
     }
     .table table{
         width: 100%;
@@ -528,17 +518,14 @@ table td span{
     .table table td,th{
         background-color: rgb(179, 182, 180);
         padding: 10px 19px;
+        font-size: 15px;
         border-bottom: 3px solid rgb(218, 218, 209);
         text-align: left;
     }
     .table table th{
         background-color: rgb(163, 168, 167);
     }
-    /* .table-cont table{
-        width: 100%;
-        border-collapse: collapse;
-        display: block;
-    } */
+    
 }
 @media screen and (max-width:670px){
     .container{
@@ -549,12 +536,9 @@ table td span{
     .notes h1{
         font-size: 32px;
     }
-    .notes h1 img{
-        width: 13%;
-    }
     .sidenav {
         position: absolute;
-        background: rgb(255, 255, 255);
+        background: rgb(190, 25, 25);
         display: block;
         min-height: 60vh;
         width: 200px;
@@ -566,10 +550,12 @@ table td span{
         transition: 1s;
     }
     .sidenav .header{
-        margin-top: 14px;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
     .sidenav .header img{
-        width: 50%;
+        width: 90%;
+        margin-left: 10px;
     }
     .sidenav .lists{
         margin-top: -10px;
@@ -596,19 +582,20 @@ table td span{
     }
     .sidenav .fa-xmark{
         padding-left: 5px;
-        border: 4px solid black;
+        border: 4px solid rgb(255, 255, 255);
         width: 40px;
         margin-left: 4px;
     }
     .fa-solid{
         display: block;
         cursor: pointer;
+        color: #fff;
     }
 }
 @media screen and (max-width:530px){ 
     .sidenav {
         position: absolute;
-        background: rgb(255, 255, 255);
+        background: rgb(190, 25, 25);
         display: block;
         min-height: 100vh;
         width: 200px;
@@ -620,9 +607,12 @@ table td span{
         transition: 1s;
     }
     .sidenav .header{
-        margin-top: 13px;
+        margin-top: 10px;
+        margin-left: 2px;
+        margin-bottom: 30px;
     }
     .sidenav .header img{
+        padding-left: 0;
         width: 100%;
     }
     .sidenav .lists{
@@ -639,17 +629,11 @@ table td span{
         font-size: 15px;
         font-weight: 500;
     }
-    .second-content .notes h1{
-        font-size: 29px;
-    }
-    .second-content .notes h1 .pound{
-        font-size: 26px;
-    }
-    .second-content .notes h1 .zero{
-        font-size: 26px;
+    .notes h1{
+        font-size: 28px;
     }
     .notes h1 img{
-        width: 12%;
+        width: 10%;
     }
 /* --------side nav 1--------- */
    .first-content{
@@ -663,12 +647,13 @@ table td span{
     }
     .sidenav .fa-xmark{
         padding-left: 5px;
-        border: 4px solid black;
+        border: 4px solid rgb(255, 255, 255);
         width: 40px;
         margin-left: 4px;
     }
     .fa-solid{
         display: block;
         cursor: pointer;
+        color: #fff;
     }
 }
