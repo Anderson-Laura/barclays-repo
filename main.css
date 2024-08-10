@@ -500,6 +500,9 @@ table td span{
 
 }
 @media screen and (max-width:750px){
+    .container{
+        overflow: auto;
+    }
     .lists{
         padding: 100px 2px;
     }
@@ -531,7 +534,7 @@ table td span{
     .container{
         display: grid;
         grid-template-columns:  auto ;
-        overflow-x: hidden;
+        overflow: auto;
     }
     .notes h1{
         font-size: 32px;
@@ -539,7 +542,7 @@ table td span{
     .sidenav {
         position: absolute;
         background: rgb(190, 25, 25);
-        display: block;
+        display: none;
         min-height: 60vh;
         width: 200px;
         top: 0;
@@ -593,10 +596,13 @@ table td span{
     }
 }
 @media screen and (max-width:530px){ 
+    .container{
+        overflow: auto;
+    }
     .sidenav {
         position: absolute;
         background: rgb(190, 25, 25);
-        display: block;
+        display: none;
         min-height: 100vh;
         width: 200px;
         top: 0;
