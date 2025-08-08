@@ -530,7 +530,7 @@ table td span{
 @media screen and (max-width:670px){
     .container{
         display: grid;
-        width: 120%;
+        width: 150%;
         grid-template-columns:  auto ;
         overflow-x: hidden;
     }
@@ -660,7 +660,7 @@ table td span{
 }
 @media screen and (max-width:375px){
     .container{
-        width: 120%;
+        width: 130%;
     }
     .sidenav {
         position: absolute;
