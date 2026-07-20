@@ -11,13 +11,13 @@
     grid-template-columns: 20% 55% auto;
     gap: 1px;
     position: relative;
-    background: rgb(214, 56, 8);
-    
+    background: rgb(34, 78, 143);
+    /* background-color: rgba(204, 202, 202, 0.842); */
 }
 /* ----------side-nav1-------- */
 .sidenav{
     /* background-color: rgb(254, 255, 255); */
-    background: rgb(214, 56, 8);
+    background: rgb(34, 78, 143);
     /* border-radius: 5px; */
     box-shadow: 2px 1px 10px rgba(54, 53, 53, 0.288);
 }
@@ -29,9 +29,6 @@
 }
 .header img{
     width: 90%;
-}
-.nav-header{
-    display: none;
 }
 .lists{
     margin: 8px 0;
@@ -57,9 +54,12 @@
     border-right: 6px solid rgb(255, 255, 255);
 }
 /* ----------Main contect-------- */
+.image-top{
+    display: none;
+}
 .content{
     /* background-color: rgb(255, 255, 255); */
-    background: rgb(214, 56, 8);;
+    background: rgb(34, 78, 143);
 }
 .first-content{
     margin: 25px 20px ;
@@ -133,7 +133,7 @@
     padding: 10px 0;
     width: 100%;
     margin-top: 30px;
-    background: rgb(214, 56, 8);;
+    background: rgb(204, 13, 13);
     color: #fff;
     font-size: 20px;
     font-weight: 600;
@@ -219,7 +219,7 @@ table td span{
 /* ----------side-nav2-------- */
 .sidenav-2{
     /* background-color: rgb(225, 238, 238); */
-    background: rgb(214, 56, 8);;
+    background: rgb(34, 78, 143);
 }
 .images-settings{
     text-align: right;
@@ -531,14 +531,15 @@ table td span{
     } */
 }
 @media screen and (max-width:670px){
-    .nav-header{
-        display: block;
-        text-align: center;
-        color: rgb(214, 56, 8);
-    }
+    .image-top{
+    display: block;
+    width: 100%;
+    background-color: white;
+    
+}
     .container{
         display: grid;
-        width: 150%;
+        width: 250%;
         grid-template-columns:  auto ;
         overflow-x: hidden;
     }
@@ -547,7 +548,7 @@ table td span{
     }
     .sidenav {
         position: absolute;
-        background: rgb(214, 56, 8);;
+        background: rgb(34, 78, 143);
         display: block;
         min-height: 60vh;
         width: 200px;
@@ -604,7 +605,7 @@ table td span{
 @media screen and (max-width:530px){ 
     .sidenav {
         position: absolute;
-        background: rgb(214, 56, 8);
+        background: rgb(34, 78, 143);
         display: block;
         min-height: 100vh;
         width: 200px;
@@ -666,13 +667,14 @@ table td span{
         color: #fff;
     }
 }
-@media screen and (max-width:375px){
+@media screen and (max-width:405px){
     .container{
-        width: 130%;
+        max-width: 150%;
+        height: 100vh;
     }
     .sidenav {
         position: absolute;
-        background: rgb(214, 56, 8);;
+        background: rgb(34, 78, 143);
         display: block;
         min-height: 100vh;
         width: 200px;
@@ -700,18 +702,38 @@ table td span{
         font-weight: 500;
     }
     .second-content{
-        padding: 30px 30px;
+        padding: 15px 20px;
     }
     .notes h3{
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 500;
     }
     .notes h1{
-        font-size: 28px;
+        font-size: 26px;
     }
     .notes h1 img{
-        width: 10%;
+        width: 15px;
     }
+    .third-content h1{
+        font-size: 25px;
+        padding: 15px;
+    }
+    .table{
+        margin: 10px;
+    }
+    .table table td,th{
+    background-color: rgb(179, 182, 180);
+    padding: 10px;
+    border-bottom: 3px solid rgb(218, 218, 209);
+    text-align: left;
+    font-size: 10px;
+    font-weight: 600;
+}
+.table table th{
+    background-color: rgb(222, 228, 222);
+    font-weight: 700;
+    font-size: 13px;
+}
 /* --------side nav 1--------- */
    .first-content{
         display: flex;
